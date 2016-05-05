@@ -1,0 +1,34 @@
+.teams {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.teams td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-team {
+  width: 30%;
+}
+
+.chart svg {
+  width: 100%;
+  height: 55px;
+}
+
+.chart svg .linePath {
+  fill: none;
+  stroke: blue;
+  stroke-width: 1;
+}
+
+[ng-cloak]
+{
+  display: none !important;
+}

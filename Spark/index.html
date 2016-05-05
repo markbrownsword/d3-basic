@@ -1,0 +1,22 @@
+<html ng-app="myApp">
+  <head>
+    <link href="src/app.css" rel="stylesheet">
+    <script src="bower_components/d3/d3.js" charset="UTF-8" defer></script>
+    <script src="bower_components/angular/angular.js" charset="UTF-8" defer></script>
+    <script src="src/app.js" defer></script>
+  </head>
+  <body>
+    <div ng-controller="myApp.mainController" ng-cloak>
+      <table class='teams'>
+        <tr>
+          <th class='row-team'>Team</th>
+          <th>Burn</th>
+        </tr>
+        <tr ng-repeat='team in teams'>
+          <td><span>{{team.name}}</span></td>
+          <td><span spark-line class="chart" data="team.burn"></span></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
