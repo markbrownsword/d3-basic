@@ -28,7 +28,6 @@
   stroke-width: 1;
 }
 
-[ng-cloak]
-{
+[ng-cloak] {
   display: none !important;
 }
